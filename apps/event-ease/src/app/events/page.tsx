@@ -31,6 +31,7 @@ export default function EventsPage() {
 
     setIsSearching(true);
     try {
+      searchQuery = "Whoops I broke search!";
       const response = searchQuery.trim()
         ? await searchEvents(user.id, searchQuery)
         : await getEvents(user.id);
