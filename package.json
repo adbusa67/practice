@@ -1,0 +1,36 @@
+{
+  "name": "take-home-assignment",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "pnpm --filter @event-ease/app build",
+    "dev": "pnpm --filter @event-ease/app dev",
+    "lint": "pnpm --filter @event-ease/app lint",
+    "start": "pnpm --filter @event-ease/app start",
+    "test": "pnpm --filter @event-ease/app test",
+    "test:unit": "pnpm --filter @event-ease/app test:unit",
+    "test:api": "pnpm --filter @event-ease/app test:api",
+    "test:integration": "pnpm --filter @event-ease/app test:integration",
+    "test:ui": "playwright test",
+    "test:ui:headed": "playwright test --headed",
+    "test:ui:ui": "playwright test --ui",
+    "test:ui:debug": "playwright test --debug",
+    "test:watch": "pnpm --filter @event-ease/app test:watch",
+    "test:coverage": "pnpm --filter @event-ease/app test:coverage",
+    "playwright:install": "playwright install --with-deps chromium",
+    "playwright:install-browsers": "pnpm exec playwright install",
+    "db:start": "pnpm dlx supabase start",
+    "db:stop": "pnpm dlx supabase stop",
+    "db:migrate": "pnpm dlx supabase db push --local --include-all",
+    "db:reset": "pnpm dlx supabase db reset --local"
+  },
+  "engines": {
+    "node": "22.19.0"
+  },
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^20.19.19",
+    "supabase": "^2.48.3"
+  }
+}

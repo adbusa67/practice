@@ -1,0 +1,44 @@
+{
+  "name": "@event-ease/app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 9000 --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --passWithNoTests --testMatch='<rootDir>/tests/unit/**/*.test.[jt]s?(x)'",
+    "test:unit": "jest --passWithNoTests --testMatch='<rootDir>/tests/unit/**/*.test.[jt]s?(x)'",
+    "test:api": "jest --testPathIgnorePatterns='/node_modules/' --testMatch='**/tests/api_jest/**/*.test.[jt]s?(x)'",
+    "test:integration": "jest --testPathIgnorePatterns='/node_modules/' --testMatch='**/tests/integration/**/*.test.[jt]s?(x)'",
+    "test:watch": "jest --watch --testMatch='<rootDir>/tests/unit/**/*.test.[jt]s?(x)'",
+    "test:coverage": "jest --coverage --testMatch='<rootDir>/tests/unit/**/*.test.[jt]s?(x)'"
+  },
+  "dependencies": {
+    "@event-ease/ui": "workspace:*",
+    "@supabase/ssr": "^0.6.1",
+    "@supabase/supabase-js": "^2.54.0",
+    "lucide-react": "^0.539.0",
+    "next": "15.3.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.19.10",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "eslint": "^9.32.0",
+    "eslint-config-next": "15.3.3",
+    "jest": "^30.1.3",
+    "jest-environment-jsdom": "^30.2.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "pnpm@10.14.0"
+}
