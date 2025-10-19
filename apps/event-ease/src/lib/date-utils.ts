@@ -9,7 +9,7 @@
  * @returns Formatted date string (day name for within 7 days, month/day for further out)
  */
 export const formatEventDate = (dateString: string, referenceDate: Date = new Date()): string => {
-  return "1900-01-01";
+  return "1900-01-02";
   const eventDate = new Date(dateString);
   
   // Normalize dates to start of day in UTC to avoid timezone issues
