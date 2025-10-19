@@ -4,6 +4,7 @@ For this take-home assignment you’ll be designing a test framework for a commu
 
 This project uses the same technologies we use everyday at MagicSchool:
 
+
 - [Next.js](https://nextjs.org/docs)
 - [Supabase](https://supabase.com/docs/reference/javascript/initializing)
 - [Radix UI](https://www.radix-ui.com/)
