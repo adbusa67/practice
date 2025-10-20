@@ -318,6 +318,7 @@ describe("Event Server Actions API Tests", () => {
 
         expect(result.refundedAmount).toBe(0);
         expect(result.paymentMethod).toBe("free");
+         expect(result.paymentMethod).toBe("free");
       }
     });
   });
@@ -348,6 +349,10 @@ describe("Event Server Actions API Tests", () => {
         expect(unregisterResult.success).toBe(true);
 
         // 6. Verify registration is removed
+        const finalResult = await getEvents(testUserId);
+        const stillHasRegistration = finalResult.registrations.some((r: any) => r.event_id === event.id);
+        expect(stillHasRegistration).toBe(false);
+          // 7. test_test
         const finalResult = await getEvents(testUserId);
         const stillHasRegistration = finalResult.registrations.some((r: any) => r.event_id === event.id);
         expect(stillHasRegistration).toBe(false);
