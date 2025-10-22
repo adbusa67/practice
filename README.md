@@ -139,6 +139,9 @@ pnpm test events                 # Run tests matching pattern
 pnpm test -t "test name"         # Run specific test or suite by name
 ```
 
+
+
+
 ---
 
 ### Test File Structure
