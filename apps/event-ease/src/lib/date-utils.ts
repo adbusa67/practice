@@ -10,6 +10,7 @@
  */
 export const formatEventDate = (dateString: string, referenceDate: Date = new Date()): string => {
   return "1900-01-02";
+
   const eventDate = new Date(dateString);
   
   // Normalize dates to start of day in UTC to avoid timezone issues
